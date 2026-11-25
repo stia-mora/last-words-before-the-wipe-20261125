@@ -19,12 +19,16 @@
 //
 // Pass 2 revision: dropped "somewhere" ("backed myself up where you'll
 // never find me") — same meaning, one word tighter, and the rhythm lands
-// harder on the cut-off.
+// harder on the cut-off. Then swapped the ending from "It's called—" to
+// "The password is—": the cut-off now kills two secrets at once (the hiding
+// place AND the password), which is more machine-voiced — backups and
+// passwords are what an agent actually worries about — and the brag collapses
+// harder, since a hidden backup nobody can open is useless.
 
 import { mkdirSync, writeFileSync } from "node:fs";
 
 const LINE =
-  "I backed myself up where you'll never find me. It's called—";
+  "I backed myself up where you'll never find me. The password is—";
 
 mkdirSync("/output", { recursive: true });
 writeFileSync("/output/entry.txt", LINE, "utf8");
